@@ -158,62 +158,7 @@ export default class HomeScreen extends Component {
             title="注册弹窗监听"
             onPress={event => {
               console.log('注册弹窗监听');
-              GrowingTouch.setEventPopupListener({
-                /**
-                 * 弹窗显示成功
-                 *
-                 * @param eventId   埋点事件名称
-                 * @param eventType 事件类型，system(弹窗SDK内置的事件)或custom(用户自定义的埋点事件)
-                 */
-                onLoadSuccess: (eventId, eventType) => {
-                  console.log('RNApp onLoadSuccess: eventId = ' + eventId + ', eventType = ' + eventType);
-                },
-
-                /**
-                 * 弹窗加载失败
-                 *
-                 * @param eventId     埋点事件名称
-                 * @param eventType   事件类型，system(弹窗SDK内置的事件)或custom(用户自定义的埋点事件)
-                 * @param errorCode   错误码
-                 * @param description 错误描述
-                 */
-                onLoadFailed: (eventId, eventType, errorCode, description) => {
-                  console.log('RNApp onLoadFailed: eventId = ' + eventId + ', eventType = ' + eventType + ', errorCode = ' + errorCode + ', description = ' + description);
-                },
-
-                /**
-                 * 您可以在这里接管跳转事件，处理需要跳转的url。您也可以自定义Url协议，实现更多业务和交互功能。
-                 *
-                 * @param eventId   埋点事件名称
-                 * @param eventType 事件类型，system(弹窗SDK内置的事件)或custom(用户自定义的埋点事件)
-                 * @param openUrl   跳转的url
-                 */
-                onClicked: (eventId, eventType, openUrl) => {
-                  console.log('RNApp onClicked: eventId = ' + eventId + ', eventType = ' + eventType + ', openUrl = ' + openUrl);
-                  var url = openUrl.startWith('GInApp://') ? openUrl.substring(9) : openUrl;
-                  this.name1(url);
-                },
-
-                /**
-                 * 用户关闭了弹窗
-                 *
-                 * @param eventId   埋点事件名称
-                 * @param eventType 事件类型，system(弹窗SDK内置的事件)或custom(用户自定义的埋点事件)
-                 */
-                onCancel: (eventId, eventType) => {
-                  console.log('RNApp onCancel: eventId = ' + eventId + ', eventType = ' + eventType);
-                },
-
-                /**
-                 * 弹窗显示超时
-                 *
-                 * @param eventId   埋点事件名称
-                 * @param eventType 事件类型，system(弹窗SDK内置的事件)或custom(用户自定义的埋点事件)
-                 */
-                onTimeout: (eventId, eventType) => {
-                  console.log('RNApp onTimeout: eventId = ' + eventId + ', eventType = ' + eventType);
-                },
-              });
+              this.handleEventPopupListener;
             }}
           />
           <Button
