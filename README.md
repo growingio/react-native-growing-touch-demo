@@ -23,4 +23,4 @@ react-native run-android
 ## 弹窗监听
 - 集成时推荐在安卓\iOS原生代码里监听，您可以使用我们定义好的点击弹窗跳转功能
 - 如果想在RN代码里监听弹窗的话，参考HomeScreen.js里的写法，推荐写在componentWillMount这个生命周期里。
-- 注意一旦在RN里监听了弹窗的话，您就必须自己实现点击弹窗跳转的逻辑，参考HomeScreen.js里的handleEventPopupListener里的onCliked写法。
+- 注意一旦在RN里监听了弹窗的话，您就必须自己实现点击弹窗跳转的逻辑，参考HomeScreen.js里的handleEventPopupListener里的onCliked写法。        
