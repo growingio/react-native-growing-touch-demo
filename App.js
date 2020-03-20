@@ -12,6 +12,7 @@ import {NativeModules} from 'react-native';
 
 // 线上依赖
 import GrowingTouch from 'react-native-growing-touch'
+import MJGrowingIOBanner from './MJGrowingIOBanner';
 
 
 // 定义导航器 可定义默认
@@ -20,6 +21,7 @@ const AppNavigator = createStackNavigator(
     Home: HomeScreen,
     Details: DetailsScreen,
     TestPage: TestPage,
+    Banner: MJGrowingIOBanner,
 },
 {
   initialRouteName: 'Home',

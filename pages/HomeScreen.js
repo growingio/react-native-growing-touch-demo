@@ -110,7 +110,7 @@ export default class HomeScreen extends Component {
           />
           <Button
             title="进入简单页"
-            onPress={() => this.props.navigation.push('TestPage')}
+            onPress={() => this.props.navigation.push('Banner')}
           />
         </View>
         <View style={styles.alternativeLayoutButtonContainer}>

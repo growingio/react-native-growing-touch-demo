@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_dark"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.growingio.android.sdk.gtouch.widget.banner.GTouchBanner
+        android:id="@+id/view_gtouch_banner"
+        android:layout_width="match_parent"
+        android:layout_height="197dp"
+        app:gtouchBannerKey="b50638c7ec4b3edb"
+        app:gtouchErrorReplaceDrawable="@mipmap/ic_launcher"
+        app:gtouchIndicatorGravity="bottom|right"
+        app:gtouchPlaceholderDrawable="@mipmap/ic_launcher" />
+</FrameLayout>
