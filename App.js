@@ -60,7 +60,7 @@ export default class App extends React.Component {
 
   render() {
     //setUserId 设置登录用户名称
-    NativeModules.GrowingIO.setUserId("lisi");
+    // NativeModules.GrowingIO.setUserId("lisi");
     return (<AppContainer />);
   }
 }

@@ -13,6 +13,6 @@ export default class MJGrowingIOBanner extends Component {
     //     name: 'stranger'
     // }
     render(){
-        return  <BannerView {...this.props} onClickGIOBanner={this.props.callback} style={{width:420,height:397}}/>
+        return  <BannerView {...this.props} onClickGIOBanner={this.props.callback} style={{width:420,height:197,backgroundColor:'white'}} />
     }
 }

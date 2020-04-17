@@ -109,14 +109,14 @@ export default class HomeScreen extends Component {
             onPress={() => this.props.navigation.push('Details')}
           />
           <Button
-            title="进入简单页"
+            title="进入轮播页"
             onPress={() => this.props.navigation.push('Banner')}
           />
         </View>
         <View style={styles.alternativeLayoutButtonContainer}>
           <Button
-            title="用户张三"
-            onPress={() => NativeModules.GrowingIO.setUserId("zhangsan")}
+            title="清除用户"
+            onPress={() => NativeModules.GrowingIO.clearUserId()}
           />
           <Button
             title="用户李四"
